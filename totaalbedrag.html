@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+ Bedrag per stuk:
+  <input type="text" name="firstname" id="bedrag" value="12.95">
+  <br>
+  Aantal:
+  <input type="text" name="lastname" id="aantal" value="3">
+  <br><br>
+  
+</form>
+<button onclick="myFunction1()" class="button">Bereken</button>
+    <div id="div1"></div>
+<script>
+    
+    
+    function myFunction1(){  
+        
+        var bedrag = document.getElementById("bedrag").value;
+    var aantal = document.getElementById("aantal").value;
+         
+           var som = bedrag*aantal ;
+        
+        
+        
+        document.getElementById("div1").innerHTML = "het bedrag is " +  som.toFixed(2);
+        
+           
+        }
+    
+    
+    </script>
+</body>
+</html>
